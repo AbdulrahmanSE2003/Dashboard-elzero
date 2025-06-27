@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Dashboard | Page</title>
+        <!-- !NOTE: Remember To Change-->
+
+        <!-- Font Link -->
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <!-- Style CSS -->
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body class="min-vh-100">
+        <section class="page d-flex h-100">
+            <!-- Sidebar -->
+            <div class="sidebar bg-white shadow-sm z-1">
+                <div class="position-sticky top-0 mt-3">
+                    <h3 class="text-center mb-5 position-relative hide-mobile">
+                        M<span class="text-red">n</span>m<span class="text-red"
+                            >l</span
+                        >st
+                    </h3>
+                    <ul class="px-0">
+                        <li class="mb-2 p-2 active" data-content="dashboard">
+                            <span
+                                class="d-flex gap-3 w-100 justify-content-start align-items-center text-black fw-medium"
+                            >
+                                <i class="fas fa-chart-bar fa-fw"></i>
+                                <span>Dashboard</span>
+                            </span>
+                        </li>
+                        <li class="mb-2 p-2" data-content="profile">
+                            <span
+                                class="d-flex gap-3 w-100 justify-content-start align-items-center text-black fw-medium"
+                            >
+                                <i class="fas fa-user fa-fw"></i>
+                                <span>Profile</span>
+                            </span>
+                        </li>
+                        <li class="mb-2 p-2" data-content="plans">
+                            <span
+                                class="d-flex gap-3 w-100 justify-content-start align-items-center text-black fw-medium"
+                            >
+                                <i class="fa-solid fa-credit-card fa-fw"></i>
+                                <span>Plans</span>
+                            </span>
+                        </li>
+                        <li class="mb-2 p-2" data-content="friends">
+                            <span
+                                class="d-flex gap-3 w-100 justify-content-start align-items-center text-black fw-medium"
+                            >
+                                <i class="fa-regular fa-circle-user fa-fw"></i>
+                                <span>Friends</span>
+                            </span>
+                        </li>
+                        <li class="mb-2 p-2" data-content="courses">
+                            <span
+                                class="d-flex gap-3 w-100 justify-content-start align-items-center text-black fw-medium"
+                            >
+                                <i class="fas fa-graduation-cap fa-fw"></i>
+                                <span>Courses</span>
+                            </span>
+                        </li>
+                        <li class="mb-2 p-2" data-content="setting">
+                            <span
+                                class="d-flex gap-3 w-100 justify-content-start align-items-center text-black fw-medium"
+                            >
+                                <i class="fas fa-gear fa-fw"></i>
+                                <span>Setting</span>
+                            </span>
+                        </li>
+                        <li class="mb-2 p-2" data-content="projects">
+                            <span
+                                class="d-flex gap-3 w-100 justify-content-start align-items-center text-black fw-medium"
+                            >
+                                <i class="fas fa-share-nodes fa-fw"></i>
+                                <span>Projects</span>
+                            </span>
+                        </li>
+                        <li class="mb-2 p-2" data-content="files">
+                            <span
+                                class="d-flex gap-3 w-100 justify-content-start align-items-center text-black fw-medium"
+                            >
+                                <i class="fas fa-file fa-fw"></i>
+                                <span>Files</span>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Main Content Area -->
+            <div class="main-content flex-grow-1 d-flex flex-column">
+                <!-- Header -->
+                <div
+                    class="header bg-white d-flex justify-content-between align-items-center p-3 shadow-sm"
+                >
+                    <div class="search position-relative w-50">
+                        <input
+                            type="text"
+                            name="search"
+                            id="search"
+                            placeholder="Type A Keyword..."
+                        />
+                    </div>
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="position-relative bell">
+                            <i class="fa-regular fa-bell"></i>
+                        </div>
+                        <div class="user-action">
+                            <img
+                                src="images/user.jpg"
+                                class="rounded-circle"
+                                alt="user-image"
+                            />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Page Content -->
+                <div class="content p-4">
+                    <h3 class="bg-white p-3 rounded shadow-sm">Dashboard</h3>
+                    <div id="dyn-content"></div>
+                </div>
+            </div>
+        </section>
+
+        <script
+            src="https://kit.fontawesome.com/9a16a36fbb.js"
+            crossorigin="anonymous"
+        ></script>
+        <!-- Bootstrap JS -->
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <!-- Js File  -->
+        <script src="js/main.js"></script>
+    </body>
+</html>
