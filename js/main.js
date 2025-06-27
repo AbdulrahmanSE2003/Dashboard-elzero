@@ -1,5 +1,5 @@
 // !INFO: Add main content on load
-// document.addEventListener("DOMContentLoaded", () => changeContent("dashboard"));
+document.addEventListener("DOMContentLoaded", () => changeContent("dashboard"));
 
 // !INFO: handle packages
 document.addEventListener("click", () => {
@@ -44,7 +44,7 @@ function changeContent(title) {
 
 // !INFO: Content section
 
-window.dashboard = `<div class="row gap-3 mt-4 quick-intro">
+window.dashboard = `<div class="row gap-3 mt-4 mx-1 quick-intro">
                             <div class="col-lg col-12 bg-white rounded p-3 pb-0">
                                 <div class="welcome mb-3 my-4">
                                     <h5>Welcome</h5>
@@ -106,7 +106,7 @@ window.dashboard = `<div class="row gap-3 mt-4 quick-intro">
                                 </div>
                             </div>
                         </div>
-                        <div class="row gap-3 mt-4">
+                        <div class="row gap-3 mt-4 mx-1">
                             <div class="col-lg col-12 bg-white rounded-3 p-3">
                                 <h5>Yearly Targets</h5>
                                 <p class="text-muted">Targets Of The Year</p>
@@ -238,7 +238,7 @@ window.dashboard = `<div class="row gap-3 mt-4 quick-intro">
                                 </div>
                             </div>
                         </div>
-                        <div class="row gap-3 mt-4">
+                        <div class="row gap-3 mt-4 mx-1">
                             <div class="col-lg col-12 bg-white rounded-3 p-3 news">
                                 <h5 class="fs-4 mb-3">Latest News</h5>
                                 <div
@@ -439,7 +439,7 @@ window.dashboard = `<div class="row gap-3 mt-4 quick-intro">
                                 </div>
                             </div>
                         </div>
-                        <div class="row gap-3 mt-4">
+                        <div class="row gap-3 mt-4 mx-1">
                             <div class="col-lg col-12 bg-white rounded-3 p-3">
                                 <h5>Top Search Items</h5>
                                 <div
@@ -657,128 +657,121 @@ window.dashboard = `<div class="row gap-3 mt-4 quick-intro">
                                 </div>
                             </div>
 </div>`;
-window.setting = `<div class="row row-cols-1 px-0 row-cols-lg-2 g-3 mt-2">
-                                <div class="col d-flex px-0 setting">
-                                    <div class="bg-white rounded p-3 w-100 h-100 d-flex flex-column">
-                                        <h5 class="fs-4">Site Control</h5>
-                                        <p class="text-muted fw-semibold">Control The Website If There Is Maintenance</p>
-                                        <div class="row justify-content-between align-items-center mb-2">
-                                            <div class="col-8">
-                                                <p class="m-0 mt-2 fw-semibold fs-6">Website Control</p>
-                                                <p class="text-muted">Open/Close Website And Type The Reason</p>
-                                            </div>
-                                            <div class="col text-end">
-                                                <label >
-                                                    <input type="checkbox" class="toggle-checkbox d-none">
-                                                    <div class="toggle-switch"></div>
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="mt-auto">
-                                            <textarea  rows="5" placeholder="Close Message Content..."></textarea>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col d-flex px-0">
-                                    <div class="bg-white rounded p-3 w-100 h-100 d-flex flex-column">
-                                        <h5 class="fs-4">Site Control</h5>
-                                        <p class="text-muted fw-semibold">Control The Website If There Is Maintenance</p>
-                                        <div class="inputs">
-                                            <div class="mb-3  d-flex flex-column gap-2">
-                                                <label for="FirstName">First Name</label>
-                                                <input class="" type="text" id="FirstName" placeholder="First Name...">
-                                            </div>
-                                            <div class="mb-3  d-flex flex-column gap-2">
-                                                <label for="LastName">Last Name</label>
-                                                <input class="" type="text" id="LastName" placeholder="Last Name...">
-                                            </div>
-                                            <div class="mb-3 d-flex justify-content-between align-items-center">
-                                                <div class="w-75  d-flex flex-column gap-2">
-                                                    <label for="Email">E-Mail</label>
-                                                    <input  type="text" id="Email" placeholder="E-Mail..." disabled>
-                                                </div>
-                                                <span class="text-primary cursor-pointer">Change</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                        </div>  
-
-<div class="row row-cols-1 px-0 row-cols-lg-2 g-3 mt-4">
-    <div class="col d-flex px-0">
-        <div class="bg-white rounded p-3 w-100 h-100 d-flex flex-column">
-            <h5 class="fs-4">Security Info</h5>
-            <p class="text-muted fw-semibold">Security Information About Your Account</p>
-
-            <div class="d-flex justify-content-between mb-3 align-items-center">
-                <div>
-                    <p class="m-0 mt-2 fw-semibold fs-6">Password</p>
-                    <p class="text-muted">Last Change On 25/10/2021</p>
-                </div>
-                <button class="btn btn-primary btn-sm">Change</button>
-            </div>
-
-            <div class="d-flex justify-content-between mb-3 align-items-center">
-                <div>
-                    <p class="m-0 mt-2 fw-semibold fs-6">Two-Factor Authentication</p>
-                    <p class="text-muted">Enable/Disable The Feature</p>
-                </div>
-                <label >
-                    <input type="checkbox" class="toggle-checkbox d-none">
-                    <div class="toggle-switch"></div>
-                </label>
-            </div>
-
-            <div class="d-flex justify-content-between mb-3 align-items-center">
-                <div>
-                    <p class="m-0 mt-2 fw-semibold fs-6">Devices</p>
-                    <p class="text-muted">Check The Login Devices List</p>
-                </div>
-                <span class="bg-light border rounded px-2 py-1 pointer">Devices</span>
-            </div>
+window.setting = `<div class="mt-2">
+  <div class="row row-cols-1 row-cols-lg-2 g-3 mt-2">
+    <div class="col setting">
+      <div class="bg-white rounded p-3 w-100 h-100 d-flex flex-column">
+        <h5 class="fs-4">Site Control</h5>
+        <p class="text-muted fw-semibold">Control The Website If There Is Maintenance</p>
+        <div class="row justify-content-between align-items-center mb-2">
+          <div class="col-8">
+            <p class="m-0 mt-2 fw-semibold fs-6">Website Control</p>
+            <p class="text-muted">Open/Close Website And Type The Reason</p>
+          </div>
+          <div class="col text-end">
+            <label>
+              <input type="checkbox" class="toggle-checkbox d-none">
+              <div class="toggle-switch"></div>
+            </label>
+          </div>
         </div>
-    </div>
-
-    <div class="col d-flex px-0">
-        <div class="bg-white rounded p-3 w-100 h-100 d-flex flex-column">
-            <h5 class="fs-4">Backup Manager</h5>
-            <p class="text-muted fw-semibold">Control Backup Time And Location</p>
-            <div class="d-flex flex-column gap-3 fs-5 backup px-3">
-                <div>
-                    <input class="me-2" type="radio" name="backup" id="daily">
-                    <label for="daily">Daily</label>
-                </div>
-                <div>
-                    <input class="me-2" type="radio" name="backup" id="monthly" checked>
-                    <label for="monthly">Monthly</label>
-                </div>
-                <div>
-                    <input class="me-2" type="radio" name="backup" id="weekly">
-                    <label for="weekly">Weekly</label>
-                </div>
-                <hr class="m-1 my-2">
-            </div>
-            <div class="packages mt-2">
-                <div class="row gap-3 justify-content-center align-items-center">
-                    <button class="package bg-transparent col-3  rounded d-flex flex-column justify-content-center align-items-center gap-2 fs-5 p-3 pointer">
-                        <i class="fas fa-server fa-fw fs-6"></i>
-<span>Mega</span>
-                    </button>
-                    <button class="package selected bg-transparent col-3  rounded d-flex flex-column justify-content-center align-items-center gap-2 fs-5 p-3 pointer">
-                        <i class="fas fa-hard-drive fa-fw fs-6"></i>
-<span>Regular</span>
-                    </button>
-                    <button class="package bg-transparent col-3  rounded d-flex flex-column justify-content-center align-items-center gap-2 fs-5 p-3 pointer">
-                        <i class="fas fa-database fa-fw fs-6"></i>
-<span>Sigma</span>
-                    </button>
-                </div>
-            </div>
+        <div class="mt-auto">
+          <textarea rows="5" placeholder="Close Message Content..."></textarea>
         </div>
+      </div>
     </div>
+    <div class="col">
+      <div class="bg-white rounded p-3 w-100 h-100 d-flex flex-column">
+        <h5 class="fs-4">Site Control</h5>
+        <p class="text-muted fw-semibold">Control The Website If There Is Maintenance</p>
+        <div class="inputs">
+          <div class="mb-3 d-flex flex-column gap-2">
+            <label for="FirstName">First Name</label>
+            <input class="" type="text" id="FirstName" placeholder="First Name...">
+          </div>
+          <div class="mb-3 d-flex flex-column gap-2">
+            <label for="LastName">Last Name</label>
+            <input class="" type="text" id="LastName" placeholder="Last Name...">
+          </div>
+          <div class="mb-3 d-flex justify-content-between align-items-center">
+            <div class="w-75 d-flex flex-column gap-2">
+              <label for="Email">E-Mail</label>
+              <input type="text" id="Email" placeholder="E-Mail..." disabled>
+            </div>
+            <span class="text-primary cursor-pointer">Change</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row row-cols-1 row-cols-lg-2 g-3 mt-4">
+    <div class="col">
+      <div class="bg-white rounded p-3 w-100 h-100 d-flex flex-column">
+        <h5 class="fs-4">Security Info</h5>
+        <p class="text-muted fw-semibold">Security Information About Your Account</p>
+        <div class="d-flex justify-content-between mb-3 align-items-center">
+          <div>
+            <p class="m-0 mt-2 fw-semibold fs-6">Password</p>
+            <p class="text-muted">Last Change On 25/10/2021</p>
+          </div>
+          <button class="btn btn-primary btn-sm">Change</button>
+        </div>
+        <div class="d-flex justify-content-between mb-3 align-items-center">
+          <div>
+            <p class="m-0 mt-2 fw-semibold fs-6">Two-Factor Authentication</p>
+            <p class="text-muted">Enable/Disable The Feature</p>
+          </div>
+          <label>
+            <input type="checkbox" class="toggle-checkbox d-none">
+            <div class="toggle-switch"></div>
+          </label>
+        </div>
+        <div class="d-flex justify-content-between mb-3 align-items-center">
+          <div>
+            <p class="m-0 mt-2 fw-semibold fs-6">Devices</p>
+            <p class="text-muted">Check The Login Devices List</p>
+          </div>
+          <span class="bg-light border rounded px-2 py-1 pointer">Devices</span>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="bg-white rounded p-3 w-100 h-100 d-flex flex-column">
+        <h5 class="fs-4">Backup Manager</h5>
+        <p class="text-muted fw-semibold">Control Backup Time And Location</p>
+        <div class="d-flex flex-column gap-3 fs-5 backup px-3">
+          <div>
+            <input class="me-2" type="radio" name="backup" id="daily">
+            <label for="daily">Daily</label>
+          </div>
+          <div>
+            <input class="me-2" type="radio" name="backup" id="monthly" checked>
+            <label for="monthly">Monthly</label>
+          </div>
+          <div>
+            <input class="me-2" type="radio" name="backup" id="weekly">
+            <label for="weekly">Weekly</label>
+          </div>
+          <hr class="m-1 my-2">
+        </div>
+        <div class="packages mt-2">
+          <div class="row gap-3 justify-content-center align-items-center">
+            <button class="package bg-transparent col-3 rounded d-flex flex-column justify-content-center align-items-center gap-2 fs-5 p-3 pointer">
+              <i class="fas fa-server fa-fw fs-6"></i> <span>Mega</span>
+            </button>
+            <button class="package selected bg-transparent col-3 rounded d-flex flex-column justify-content-center align-items-center gap-2 fs-5 p-3 pointer">
+              <i class="fas fa-hard-drive fa-fw fs-6"></i> <span>Regular</span>
+            </button>
+            <button class="package bg-transparent col-3 rounded d-flex flex-column justify-content-center align-items-center gap-2 fs-5 p-3 pointer">
+              <i class="fas fa-database fa-fw fs-6"></i> <span>Sigma</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>`;
-window.profile = `<div class="row gap-3 mt-4 bg-white rounded p-3">
+window.profile = `<div class="row gap-3 mt-4 bg-white rounded p-3 mx-0">
                             <div
                                 class="col-lg-2 profile-overview d-flex flex-column justify-content-center align-items-center gap-3"
                             >
@@ -996,7 +989,7 @@ window.profile = `<div class="row gap-3 mt-4 bg-white rounded p-3">
                             </div>
                         </div>
 
-                        <div class="row gap-3 mt-4">
+                        <div class="row gap-3 mt-4 mx-0">
                             <div class="col-lg-4 bg-white p-3 rounded-3">
                                 <div>
                                     <h5>My Skills</h5>
@@ -1177,11 +1170,11 @@ window.profile = `<div class="row gap-3 mt-4 bg-white rounded p-3">
                                     </div>
                                 </div>
                             </div>
-                        </div>`;
-window.plans = `<div class="row mt-4 gx-4 gy-4">
-                            <div class="col-lg-6 col-12">
+</div>`;
+window.plans = `<div class="row mt-1 gx-4 gy-4 mx-1">
+                            <div class="col-lg-6 col-12 ps-0">
                                 <div
-                                    class="bg-white p-3 h-100 d-flex flex-column"
+                                    class="bg-white rounded p-3 h-100 d-flex flex-column"
                                 >
                                     <div
                                         style="background-color: #22c55e"
@@ -1291,7 +1284,7 @@ window.plans = `<div class="row mt-4 gx-4 gy-4">
 
                             <div class="col-lg-6 col-12">
                                 <div
-                                    class="bg-white p-3 h-100 d-flex flex-column"
+                                    class="bg-white rounded p-3 h-100 d-flex flex-column"
                                 >
                                     <div
                                         class="bg-primary p-3 w-100 text-white text-center rounded-2 mb-3"
@@ -1397,9 +1390,9 @@ window.plans = `<div class="row mt-4 gx-4 gy-4">
                                     </button>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-12">
+                            <div class="col-lg-6 col-12 ps-0">
                                 <div
-                                    class="bg-white p-3 h-100 d-flex flex-column"
+                                    class="bg-white rounded p-3 h-100 d-flex flex-column"
                                 >
                                     <div
                                         style="background-color: #f59e0b"
@@ -1504,6 +1497,1237 @@ window.plans = `<div class="row mt-4 gx-4 gy-4">
                                     <p class="text-muted text-center">
                                         This is your current Plan
                                     </p>
+                                </div>
+                            </div>
+</div>`;
+window.projects = `<div class="row g-3 mt-3 mx-0">
+                            <div class="col-lg-6 ps-0">
+                                <div
+                                    class="project bg-white position-relative p-3 rounded"
+                                >
+                                    <h5>Elzero Dashboard</h5>
+                                    <p class="text-muted">
+                                        Elzero Dashboard Project Design And
+                                        Programming And Hosting
+                                    </p>
+
+                                    <div
+                                        class="contributers d-flex px-3"
+                                        style="height: 35px"
+                                    >
+                                        <img
+                                            class="border border-white rounded-circle pointer"
+                                            src="images/team-01.png"
+                                            alt=""
+                                        /><img
+                                            class="border border-white rounded-circle pointer"
+                                            src="images/team-02.png"
+                                            alt=""
+                                        /><img
+                                            class="border border-white rounded-circle pointer"
+                                            src="images/team-03.png"
+                                            alt=""
+                                        /><img
+                                            class="border border-white rounded-circle pointer"
+                                            src="images/team-04.png"
+                                            alt=""
+                                        /><img
+                                            class="border border-white rounded-circle pointer"
+                                            src="images/team-05.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <hr />
+                                    <div
+                                        class="labels justify-content-end gap-2 d-flex"
+                                    >
+                                        <div class="label">
+                                            <span>Programming </span>
+                                        </div>
+                                        <div class="label">
+                                            <span>Design </span>
+                                        </div>
+                                        <div class="label">
+                                            <span> Hosting </span>
+                                        </div>
+                                        <div class="label">
+                                            <span> Marketing </span>
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    <div
+                                        class="d-flex py-2 justify-content-between align-items-center"
+                                    >
+                                        <div class="progress w-75">
+                                            <span
+                                                class="progress-bar w-75 bg-success"
+                                            ></span>
+                                        </div>
+                                        <p class="text-muted mb-0">$2500</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 ps-0">
+                                <div
+                                    class="project bg-white position-relative p-3 rounded"
+                                >
+                                    <h5>Academy Portal</h5>
+                                    <p class="text-muted">
+                                        Academy Portal Project Design And
+                                        Programming
+                                    </p>
+
+                                    <div
+                                        class="contributers d-flex px-3"
+                                        style="height: 35px"
+                                    >
+                                        <img
+                                            class="border border-white rounded-circle pointer"
+                                            src="images/team-01.png"
+                                            alt=""
+                                        /><img
+                                            class="border border-white rounded-circle pointer"
+                                            src="images/team-03.png"
+                                            alt=""
+                                        /><img
+                                            class="border border-white rounded-circle pointer"
+                                            src="images/team-04.png"
+                                            alt=""
+                                        /><img
+                                            class="border border-white rounded-circle pointer"
+                                            src="images/team-05.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <hr />
+                                    <div
+                                        class="labels justify-content-end gap-2 d-flex"
+                                    >
+                                        <div class="label">
+                                            <span>Programming </span>
+                                        </div>
+                                        <div class="label">
+                                            <span>Design </span>
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    <div
+                                        class="d-flex py-2 justify-content-between align-items-center"
+                                    >
+                                        <div class="progress w-75">
+                                            <span
+                                                style="width: 57%"
+                                                class="progress-bar bg-danger"
+                                            ></span>
+                                        </div>
+                                        <p class="text-muted mb-0">$1900</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 ps-0">
+                                <div
+                                    class="project bg-white position-relative p-3 rounded"
+                                >
+                                    <h5>Chatting Application</h5>
+                                    <p class="text-muted">
+                                        Chatting Application Project Design
+                                    </p>
+
+                                    <div
+                                        class="contributers d-flex px-3"
+                                        style="height: 35px"
+                                    >
+                                        <img
+                                            class="border border-white rounded-circle pointer"
+                                            src="images/team-01.png"
+                                            alt=""
+                                        /><img
+                                            class="border border-white rounded-circle pointer"
+                                            src="images/team-04.png"
+                                            alt=""
+                                        /><img
+                                            class="border border-white rounded-circle pointer"
+                                            src="images/team-05.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <hr />
+                                    <div
+                                        class="labels justify-content-end gap-2 d-flex"
+                                    >
+                                        <div class="label">
+                                            <span>Programming </span>
+                                        </div>
+                                        <div class="label">
+                                            <span>Design </span>
+                                        </div>
+                                        <div class="label">
+                                            <span> Hosting </span>
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    <div
+                                        class="d-flex py-2 justify-content-between align-items-center"
+                                    >
+                                        <div class="progress w-75">
+                                            <span
+                                                style="width: 90%"
+                                                class="progress-bar bg-primary"
+                                            ></span>
+                                        </div>
+                                        <p class="text-muted mb-0">$750</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 ps-0">
+                                <div
+                                    class="project bg-white position-relative p-3 rounded"
+                                >
+                                    <h5>Mohamed Application</h5>
+                                    <p class="text-muted">
+                                        Mohamed Application Project Design
+                                    </p>
+
+                                    <div
+                                        class="contributers d-flex px-3"
+                                        style="height: 35px"
+                                    >
+                                        <img
+                                            class="border border-white rounded-circle pointer"
+                                            src="images/team-01.png"
+                                            alt=""
+                                        /><img
+                                            class="border border-white rounded-circle pointer"
+                                            src="images/team-02.png"
+                                            alt=""
+                                        /><img
+                                            class="border border-white rounded-circle pointer"
+                                            src="images/team-03.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <hr />
+                                    <div
+                                        class="labels justify-content-end gap-2 d-flex"
+                                    >
+                                        <div class="label">
+                                            <span>Programming </span>
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    <div
+                                        class="d-flex py-2 justify-content-between align-items-center"
+                                    >
+                                        <div class="progress w-75">
+                                            <span
+                                                style="width: 66%"
+                                                class="progress-bar w-75 bg-info"
+                                            ></span>
+                                        </div>
+                                        <p class="text-muted mb-0">$350</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 ps-0">
+                                <div
+                                    class="project bg-white position-relative p-3 rounded"
+                                >
+                                    <h5>Mohamed Application</h5>
+                                    <p class="text-muted">
+                                        Mohamed Application Project Design
+                                    </p>
+
+                                    <div
+                                        class="contributers d-flex px-3"
+                                        style="height: 35px"
+                                    >
+                                        <img
+                                            class="border border-white rounded-circle pointer"
+                                            src="images/team-01.png"
+                                            alt=""
+                                        /><img
+                                            class="border border-white rounded-circle pointer"
+                                            src="images/team-02.png"
+                                            alt=""
+                                        /><img
+                                            class="border border-white rounded-circle pointer"
+                                            src="images/team-03.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <hr />
+                                    <div
+                                        class="labels justify-content-end gap-2 d-flex"
+                                    >
+                                        <div class="label">
+                                            <span>Programming </span>
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    <div
+                                        class="d-flex py-2 justify-content-between align-items-center"
+                                    >
+                                        <div class="progress w-75">
+                                            <span
+                                                style="width: 66%"
+                                                class="progress-bar w-75 bg-warning"
+                                            ></span>
+                                        </div>
+                                        <p class="text-muted mb-0">$350</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 ps-0">
+                                <div
+                                    class="project bg-white position-relative p-3 rounded"
+                                >
+                                    <h5>Mohamed Application</h5>
+                                    <p class="text-muted">
+                                        Mohamed Application Project Design
+                                    </p>
+
+                                    <div
+                                        class="contributers d-flex px-3"
+                                        style="height: 35px"
+                                    >
+                                        <img
+                                            class="border border-white rounded-circle pointer"
+                                            src="images/team-01.png"
+                                            alt=""
+                                        /><img
+                                            class="border border-white rounded-circle pointer"
+                                            src="images/team-02.png"
+                                            alt=""
+                                        /><img
+                                            class="border border-white rounded-circle pointer"
+                                            src="images/team-03.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <hr />
+                                    <div
+                                        class="labels justify-content-end gap-2 d-flex"
+                                    >
+                                        <div class="label">
+                                            <span>Programming </span>
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    <div
+                                        class="d-flex py-2 justify-content-between align-items-center"
+                                    >
+                                        <div class="progress w-75">
+                                            <span
+                                                style="width: 66%"
+                                                class="progress-bar w-75 bg-success"
+                                            ></span>
+                                        </div>
+                                        <p class="text-muted mb-0">$350</p>
+                                    </div>
+                                </div>
+                            </div>
+</div>`;
+window.friends = `<div class="row mt-1 friends g-4 mx-0">
+                            <div class="col-lg-4 ps-1">
+                                <div
+                                    class="d-flex flex-column gap-2 align-items-center justify-content-center bg-white rounded pt-2"
+                                >
+                                    <div
+                                        class="actions position-relative d-flex w-100 justify-content-start align-items-center gap-2 ps-3"
+                                    >
+                                        <i class="fa-solid fa-phone"></i>
+                                        <i class="fa-regular fa-envelope"></i>
+                                    </div>
+                                    <div class="w-50 text-center">
+                                        <img
+                                            src="images/friend-01 (1).jpg"
+                                            alt=""
+                                            class="w-50 rounded-circle"
+                                        />
+                                    </div>
+                                    <h6 class="m-0">Osama Elzero</h6>
+                                    <p class="m-0 text-muted">Uncle Of World</p>
+                                    <hr class="w-75 my-1" />
+                                    <div
+                                        class="features w-100 px-4 d-flex flex-column justify-content-center align-items-start"
+                                    >
+                                        <div
+                                            class="d-flex align-items-center gap-3 my-2"
+                                        >
+                                            <i class="fas fa-user fa-fw"></i>
+                                            <p class="text-muted mb-0">
+                                                78 Friends
+                                            </p>
+                                        </div>
+                                        <d
+                                            mb-0iv
+                                            class="d-flex align-items-center gap-3 my-2"
+                                        >
+                                            <i
+                                                class="fa-solid fa-code-commit fa-fw"
+                                            ></i>
+                                            <p class="text-muted mb-0">
+                                                25 Projects
+                                            </p>
+                                        </d>
+                                        <div
+                                            class="d-flex align-items-center gap-3 my-2"
+                                        >
+                                            <i
+                                                class="fas fa-newspaper fa-fw"
+                                            ></i>
+                                            <p class="text-muted mb-0">
+                                                17 Articles
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <hr class="w-75 my-1" />
+                                    <div
+                                        class="details pt-0 w-100 px-4 py-2 d-flex justify-content-between align-items-center"
+                                    >
+                                        <p class="text-muted">
+                                            Joined 02/10/2021
+                                        </p>
+                                        <div
+                                            class="details-btns d-flex justify-content-center align-items-center gap-2"
+                                        >
+                                            <button
+                                                class="btn btn-sm btn-primary"
+                                            >
+                                                Profile</button
+                                            ><button
+                                                class="btn btn-sm btn-danger"
+                                            >
+                                                Remove
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 ps-1">
+                                <div
+                                    class="d-flex flex-column gap-2 align-items-center justify-content-center bg-white rounded pt-2"
+                                >
+                                    <div
+                                        class="actions position-relative d-flex w-100 justify-content-start align-items-center gap-2 ps-3"
+                                    >
+                                        <i class="fa-solid fa-phone"></i>
+                                        <i class="fa-regular fa-envelope"></i>
+                                    </div>
+                                    <div class="w-50 text-center">
+                                        <img
+                                            src="images/friend-02.jpg"
+                                            alt=""
+                                            class="w-50 rounded-circle"
+                                        />
+                                    </div>
+                                    <h6 class="m-0">Ahmed Abdulazim</h6>
+                                    <p class="m-0 text-muted">
+                                        JavaScript Developer
+                                    </p>
+                                    <hr class="w-75 my-1" />
+                                    <div
+                                        class="features w-100 px-4 d-flex flex-column justify-content-center align-items-start"
+                                    >
+                                        <div
+                                            class="d-flex align-items-center gap-3 my-2"
+                                        >
+                                            <i class="fas fa-user fa-fw"></i>
+                                            <p class="text-muted mb-0">
+                                                350 Friends
+                                            </p>
+                                        </div>
+                                        <d
+                                            mb-0iv
+                                            class="d-flex align-items-center gap-3 my-2"
+                                        >
+                                            <i
+                                                class="fa-solid fa-code-commit fa-fw"
+                                            ></i>
+                                            <p class="text-muted mb-0">
+                                                7 Projects
+                                            </p>
+                                        </d>
+                                        <div
+                                            class="d-flex align-items-center gap-3 my-2"
+                                        >
+                                            <i
+                                                class="fas fa-newspaper fa-fw"
+                                            ></i>
+                                            <p class="text-muted mb-0">
+                                                14 Articles
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <hr class="w-75 my-1" />
+                                    <div
+                                        class="details pt-0 w-100 px-4 py-2 d-flex justify-content-between align-items-center"
+                                    >
+                                        <p class="text-muted">
+                                            Joined 09/05/2018
+                                        </p>
+                                        <div
+                                            class="details-btns d-flex justify-content-center align-items-center gap-2"
+                                        >
+                                            <button
+                                                class="btn btn-sm btn-primary"
+                                            >
+                                                Profile</button
+                                            ><button
+                                                class="btn btn-sm btn-danger"
+                                            >
+                                                Remove
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 ps-1">
+                                <div
+                                    class="d-flex flex-column gap-2 align-items-center justify-content-center bg-white rounded pt-2"
+                                >
+                                    <div
+                                        class="actions position-relative d-flex w-100 justify-content-start align-items-center gap-2 ps-3"
+                                    >
+                                        <i class="fa-solid fa-phone"></i>
+                                        <i class="fa-regular fa-envelope"></i>
+                                    </div>
+                                    <div class="w-50 text-center">
+                                        <img
+                                            src="images/friend-03.jpg"
+                                            alt=""
+                                            class="w-50 rounded-circle"
+                                        />
+                                    </div>
+                                    <h6 class="m-0">Ramez Khaled</h6>
+                                    <p class="m-0 text-muted">
+                                        Courses Collector
+                                    </p>
+                                    <hr class="w-75 my-1" />
+                                    <div
+                                        class="features w-100 px-4 d-flex flex-column justify-content-center align-items-start"
+                                    >
+                                        <div
+                                            class="d-flex align-items-center gap-3 my-2"
+                                        >
+                                            <i class="fas fa-user fa-fw"></i>
+                                            <p class="text-muted mb-0">
+                                                56 Friends
+                                            </p>
+                                        </div>
+                                        <d
+                                            mb-0iv
+                                            class="d-flex align-items-center gap-3 my-2"
+                                        >
+                                            <i
+                                                class="fa-solid fa-code-commit fa-fw"
+                                            ></i>
+                                            <p class="text-muted mb-0">
+                                                17 Projects
+                                            </p>
+                                        </d>
+                                        <div
+                                            class="d-flex align-items-center gap-3 my-2"
+                                        >
+                                            <i
+                                                class="fas fa-newspaper fa-fw"
+                                            ></i>
+                                            <p class="text-muted mb-0">
+                                                20 Articles
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <hr class="w-75 my-1" />
+                                    <div
+                                        class="details pt-0 w-100 px-4 py-2 d-flex justify-content-between align-items-center"
+                                    >
+                                        <p class="text-muted">
+                                            Joined 22/05/2023
+                                        </p>
+                                        <div
+                                            class="details-btns d-flex justify-content-center align-items-center gap-2"
+                                        >
+                                            <button
+                                                class="btn btn-sm btn-primary"
+                                            >
+                                                Profile</button
+                                            ><button
+                                                class="btn btn-sm btn-danger"
+                                            >
+                                                Remove
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 ps-1">
+                                <div
+                                    class="d-flex flex-column gap-2 align-items-center justify-content-center bg-white rounded pt-2"
+                                >
+                                    <div
+                                        class="actions position-relative d-flex w-100 justify-content-start align-items-center gap-2 ps-3"
+                                    >
+                                        <i class="fa-solid fa-phone"></i>
+                                        <i class="fa-regular fa-envelope"></i>
+                                    </div>
+                                    <div class="w-50 text-center">
+                                        <img
+                                            src="images/friend-04 (1).jpg"
+                                            alt=""
+                                            class="w-50 rounded-circle"
+                                        />
+                                    </div>
+                                    <h6 class="m-0">Taha Gaber</h6>
+                                    <p class="m-0 text-muted">
+                                        Flutter Developer
+                                    </p>
+                                    <hr class="w-75 my-1" />
+                                    <div
+                                        class="features w-100 px-4 d-flex flex-column justify-content-center align-items-start"
+                                    >
+                                        <div
+                                            class="d-flex align-items-center gap-3 my-2"
+                                        >
+                                            <i class="fas fa-user fa-fw"></i>
+                                            <p class="text-muted mb-0">
+                                                10 Friends
+                                            </p>
+                                        </div>
+                                        <d
+                                            mb-0iv
+                                            class="d-flex align-items-center gap-3 my-2"
+                                        >
+                                            <i
+                                                class="fa-solid fa-code-commit fa-fw"
+                                            ></i>
+                                            <p class="text-muted mb-0">
+                                                18 Projects
+                                            </p>
+                                        </d>
+                                        <div
+                                            class="d-flex align-items-center gap-3 my-2"
+                                        >
+                                            <i
+                                                class="fas fa-newspaper fa-fw"
+                                            ></i>
+                                            <p class="text-muted mb-0">
+                                                65 Articles
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <hr class="w-75 my-1" />
+                                    <div
+                                        class="details pt-0 w-100 px-4 py-2 d-flex justify-content-between align-items-center"
+                                    >
+                                        <p class="text-muted">
+                                            Joined 17/10/2024
+                                        </p>
+                                        <div
+                                            class="details-btns d-flex justify-content-center align-items-center gap-2"
+                                        >
+                                            <button
+                                                class="btn btn-sm btn-primary"
+                                            >
+                                                Profile</button
+                                            ><button
+                                                class="btn btn-sm btn-danger"
+                                            >
+                                                Remove
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 ps-1">
+                                <div
+                                    class="d-flex flex-column gap-2 align-items-center justify-content-center bg-white rounded pt-2"
+                                >
+                                    <div
+                                        class="actions position-relative d-flex w-100 justify-content-start align-items-center gap-2 ps-3"
+                                    >
+                                        <i class="fa-solid fa-phone"></i>
+                                        <i class="fa-regular fa-envelope"></i>
+                                    </div>
+                                    <div class="w-50 text-center">
+                                        <img
+                                            src="images/friend-05 (1).jpg"
+                                            alt=""
+                                            class="w-50 rounded-circle"
+                                        />
+                                    </div>
+                                    <h6 class="m-0">Belal Ahmed</h6>
+                                    <p class="m-0 text-muted">Police Officer</p>
+                                    <hr class="w-75 my-1" />
+                                    <div
+                                        class="features w-100 px-4 d-flex flex-column justify-content-center align-items-start"
+                                    >
+                                        <div
+                                            class="d-flex align-items-center gap-3 my-2"
+                                        >
+                                            <i class="fas fa-user fa-fw"></i>
+                                            <p class="text-muted mb-0">
+                                                78 Friends
+                                            </p>
+                                        </div>
+                                        <d
+                                            mb-0iv
+                                            class="d-flex align-items-center gap-3 my-2"
+                                        >
+                                            <i
+                                                class="fa-solid fa-code-commit fa-fw"
+                                            ></i>
+                                            <p class="text-muted mb-0">
+                                                25 Projects
+                                            </p>
+                                        </d>
+                                        <div
+                                            class="d-flex align-items-center gap-3 my-2"
+                                        >
+                                            <i
+                                                class="fas fa-newspaper fa-fw"
+                                            ></i>
+                                            <p class="text-muted mb-0">
+                                                17 Articles
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <hr class="w-75 my-1" />
+                                    <div
+                                        class="details pt-0 w-100 px-4 py-2 d-flex justify-content-between align-items-center"
+                                    >
+                                        <p class="text-muted">
+                                            Joined 02/10/2021
+                                        </p>
+                                        <div
+                                            class="details-btns d-flex justify-content-center align-items-center gap-2"
+                                        >
+                                            <button
+                                                class="btn btn-sm btn-primary"
+                                            >
+                                                Profile</button
+                                            ><button
+                                                class="btn btn-sm btn-danger"
+                                            >
+                                                Remove
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 ps-1">
+                                <div
+                                    class="d-flex flex-column gap-2 align-items-center justify-content-center bg-white rounded pt-2"
+                                >
+                                    <div
+                                        class="actions position-relative d-flex w-100 justify-content-start align-items-center gap-2 ps-3"
+                                    >
+                                        <i class="fa-solid fa-phone"></i>
+                                        <i class="fa-regular fa-envelope"></i>
+                                    </div>
+                                    <div class="w-50 text-center">
+                                        <img
+                                            src="images/friend-01 (1).jpg"
+                                            alt=""
+                                            class="w-50 rounded-circle"
+                                        />
+                                    </div>
+                                    <h6 class="m-0">Ahmed Abu-Zaid</h6>
+                                    <p class="m-0 text-muted">Youtuber</p>
+                                    <hr class="w-75 my-1" />
+                                    <div
+                                        class="features w-100 px-4 d-flex flex-column justify-content-center align-items-start"
+                                    >
+                                        <div
+                                            class="d-flex align-items-center gap-3 my-2"
+                                        >
+                                            <i class="fas fa-user fa-fw"></i>
+                                            <p class="text-muted mb-0">
+                                                78 Friends
+                                            </p>
+                                        </div>
+                                        <d
+                                            mb-0iv
+                                            class="d-flex align-items-center gap-3 my-2"
+                                        >
+                                            <i
+                                                class="fa-solid fa-code-commit fa-fw"
+                                            ></i>
+                                            <p class="text-muted mb-0">
+                                                25 Projects
+                                            </p>
+                                        </d>
+                                        <div
+                                            class="d-flex align-items-center gap-3 my-2"
+                                        >
+                                            <i
+                                                class="fas fa-newspaper fa-fw"
+                                            ></i>
+                                            <p class="text-muted mb-0">
+                                                17 Articles
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <hr class="w-75 my-1" />
+                                    <div
+                                        class="details pt-0 w-100 px-4 py-2 d-flex justify-content-between align-items-center"
+                                    >
+                                        <p class="text-muted">
+                                            Joined 02/10/2021
+                                        </p>
+                                        <div
+                                            class="details-btns d-flex justify-content-center align-items-center gap-2"
+                                        >
+                                            <button
+                                                class="btn btn-sm btn-primary"
+                                            >
+                                                Profile</button
+                                            ><button
+                                                class="btn btn-sm btn-danger"
+                                            >
+                                                Remove
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 ps-1">
+                                <div
+                                    class="d-flex flex-column gap-2 align-items-center justify-content-center bg-white rounded pt-2"
+                                >
+                                    <div
+                                        class="actions position-relative d-flex w-100 justify-content-start align-items-center gap-2 ps-3"
+                                    >
+                                        <i class="fa-solid fa-phone"></i>
+                                        <i class="fa-regular fa-envelope"></i>
+                                    </div>
+                                    <div class="w-50 text-center">
+                                        <img
+                                            src="images/friend-02 (1).jpg"
+                                            alt=""
+                                            class="w-50 rounded-circle"
+                                        />
+                                    </div>
+                                    <h6 class="m-0">Ahmed bahnasi</h6>
+                                    <p class="m-0 text-muted">
+                                        Perfect Instructor
+                                    </p>
+                                    <hr class="w-75 my-1" />
+                                    <div
+                                        class="features w-100 px-4 d-flex flex-column justify-content-center align-items-start"
+                                    >
+                                        <div
+                                            class="d-flex align-items-center gap-3 my-2"
+                                        >
+                                            <i class="fas fa-user fa-fw"></i>
+                                            <p class="text-muted mb-0">
+                                                78 Friends
+                                            </p>
+                                        </div>
+                                        <d
+                                            mb-0iv
+                                            class="d-flex align-items-center gap-3 my-2"
+                                        >
+                                            <i
+                                                class="fa-solid fa-code-commit fa-fw"
+                                            ></i>
+                                            <p class="text-muted mb-0">
+                                                25 Projects
+                                            </p>
+                                        </d>
+                                        <div
+                                            class="d-flex align-items-center gap-3 my-2"
+                                        >
+                                            <i
+                                                class="fas fa-newspaper fa-fw"
+                                            ></i>
+                                            <p class="text-muted mb-0">
+                                                17 Articles
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <hr class="w-75 my-1" />
+                                    <div
+                                        class="details pt-0 w-100 px-4 py-2 d-flex justify-content-between align-items-center"
+                                    >
+                                        <p class="text-muted">
+                                            Joined 02/10/2021
+                                        </p>
+                                        <div
+                                            class="details-btns d-flex justify-content-center align-items-center gap-2"
+                                        >
+                                            <button
+                                                class="btn btn-sm btn-primary"
+                                            >
+                                                Profile</button
+                                            ><button
+                                                class="btn btn-sm btn-danger"
+                                            >
+                                                Remove
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 ps-1">
+                                <div
+                                    class="d-flex flex-column gap-2 align-items-center justify-content-center bg-white rounded pt-2"
+                                >
+                                    <div
+                                        class="actions position-relative d-flex w-100 justify-content-start align-items-center gap-2 ps-3"
+                                    >
+                                        <i class="fa-solid fa-phone"></i>
+                                        <i class="fa-regular fa-envelope"></i>
+                                    </div>
+                                    <div class="w-50 text-center">
+                                        <img
+                                            src="images/friend-03.jpg"
+                                            alt=""
+                                            class="w-50 rounded-circle"
+                                        />
+                                    </div>
+                                    <h6 class="m-0">El-Osta Abdo</h6>
+                                    <p class="m-0 text-muted">Uncle Of World</p>
+                                    <hr class="w-75 my-1" />
+                                    <div
+                                        class="features w-100 px-4 d-flex flex-column justify-content-center align-items-start"
+                                    >
+                                        <div
+                                            class="d-flex align-items-center gap-3 my-2"
+                                        >
+                                            <i class="fas fa-user fa-fw"></i>
+                                            <p class="text-muted mb-0">
+                                                1040 Friends
+                                            </p>
+                                        </div>
+                                        <d
+                                            mb-0iv
+                                            class="d-flex align-items-center gap-3 my-2"
+                                        >
+                                            <i
+                                                class="fa-solid fa-code-commit fa-fw"
+                                            ></i>
+                                            <p class="text-muted mb-0">
+                                                700 Projects
+                                            </p>
+                                        </d>
+                                        <div
+                                            class="d-flex align-items-center gap-3 my-2"
+                                        >
+                                            <i
+                                                class="fas fa-newspaper fa-fw"
+                                            ></i>
+                                            <p class="text-muted mb-0">
+                                                8240 Articles
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <hr class="w-75 my-1" />
+                                    <div
+                                        class="details pt-0 w-100 px-4 py-2 d-flex justify-content-between align-items-center"
+                                    >
+                                        <p class="text-muted">
+                                            Joined 02/10/2021
+                                        </p>
+                                        <div
+                                            class="details-btns d-flex justify-content-center align-items-center gap-2"
+                                        >
+                                            <button
+                                                class="btn btn-sm btn-primary"
+                                            >
+                                                Profile</button
+                                            ><button
+                                                class="btn btn-sm btn-danger"
+                                            >
+                                                Remove
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+</div>`;
+
+window.courses = `<div class="row mt-2 courses g-4">
+                            <div class="col-lg-4 course">
+                                <div class="bg-white rounded">
+                                    <div class="w-100 rounded">
+                                        <img
+                                            src="images/course-01.jpg"
+                                            alt=""
+                                            class="w-100 rounded-top"
+                                        />
+                                    </div>
+                                    <div class="course-details p-3">
+                                        <h5 class="fw-semibold fs-5">
+                                            Mastering Web Design
+                                        </h5>
+                                        <p class="text-muted mb-0">
+                                            Master The Art Of Web Designing And
+                                            Mocking, Prototyping And Creating
+                                            Web Design Architecture
+                                        </p>
+                                    </div>
+                                    <div class="position-relative course-info">
+                                        <hr class="border-secondary my-2" />
+                                        <button class="btn btn-sm btn-primary">
+                                            Course Info
+                                        </button>
+                                    </div>
+                                    <div
+                                        class="course-data d-flex justify-content-between align-items-center p-2 px-3"
+                                    >
+                                        <div
+                                            class="d-flex justify-content-start align-items-center"
+                                        >
+                                            <i
+                                                class="fa-regular fa-user fa-fw"
+                                            ></i>
+                                            <p class="text-muted mb-0">925</p>
+                                        </div>
+                                        <div
+                                            class="d-flex justify-content-start align-items-center"
+                                        >
+                                            <i
+                                                class="fa-solid fa-dollar-sign fa-fw"
+                                            ></i>
+                                            <p class="text-muted mb-0">925</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 course">
+                                <div class="bg-white rounded">
+                                    <div class="w-100 rounded">
+                                        <img
+                                            src="images/course-02 (1).jpg"
+                                            alt=""
+                                            class="w-100 rounded-top"
+                                        />
+                                    </div>
+                                    <div class="course-details p-3">
+                                        <h5 class="fw-semibold fs-5">
+                                            Mastering react.JS
+                                        </h5>
+                                        <p class="text-muted mb-0">
+                                            Master The Art Of Web Designing And
+                                            Mocking, Prototyping And Creating
+                                            Web Components With React
+                                        </p>
+                                    </div>
+                                    <div class="position-relative course-info">
+                                        <hr class="border-secondary my-2" />
+                                        <button class="btn btn-sm btn-primary">
+                                            Course Info
+                                        </button>
+                                    </div>
+                                    <div
+                                        class="course-data d-flex justify-content-between align-items-center p-2 px-3"
+                                    >
+                                        <div
+                                            class="d-flex justify-content-start align-items-center"
+                                        >
+                                            <i
+                                                class="fa-regular fa-user fa-fw"
+                                            ></i>
+                                            <p class="text-muted mb-0">925</p>
+                                        </div>
+                                        <div
+                                            class="d-flex justify-content-start align-items-center"
+                                        >
+                                            <i
+                                                class="fa-solid fa-dollar-sign fa-fw"
+                                            ></i>
+                                            <p class="text-muted mb-0">925</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 course">
+                                <div class="bg-white rounded">
+                                    <div class="w-100 rounded">
+                                        <img
+                                            src="images/course-03.jpg"
+                                            alt=""
+                                            class="w-100 rounded-top"
+                                        />
+                                    </div>
+                                    <div class="course-details p-3">
+                                        <h5 class="fw-semibold fs-5">
+                                            Mastering PHP Tutorials
+                                        </h5>
+                                        <p class="text-muted mb-0">
+                                            PHP Tutorials And Examples And
+                                            Practice On Web Application And
+                                            Connecting With Databases
+                                        </p>
+                                    </div>
+                                    <div class="position-relative course-info">
+                                        <hr class="border-secondary my-2" />
+                                        <button class="btn btn-sm btn-primary">
+                                            Course Info
+                                        </button>
+                                    </div>
+                                    <div
+                                        class="course-data d-flex justify-content-between align-items-center p-2 px-3"
+                                    >
+                                        <div
+                                            class="d-flex justify-content-start align-items-center"
+                                        >
+                                            <i
+                                                class="fa-regular fa-user fa-fw"
+                                            ></i>
+                                            <p class="text-muted mb-0">925</p>
+                                        </div>
+                                        <div
+                                            class="d-flex justify-content-start align-items-center"
+                                        >
+                                            <i
+                                                class="fa-solid fa-dollar-sign fa-fw"
+                                            ></i>
+                                            <p class="text-muted mb-0">925</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 course">
+                                <div class="bg-white rounded">
+                                    <div class="w-100 rounded">
+                                        <img
+                                            src="images/course-04.jpg"
+                                            alt=""
+                                            class="w-100 rounded-top"
+                                        />
+                                    </div>
+                                    <div class="course-details p-3">
+                                        <h5 class="fw-semibold fs-5">
+                                            Mastering Python
+                                        </h5>
+                                        <p class="text-muted mb-0">
+                                            Mastering Python To Prepare For Data
+                                            Science And AI And Automating Things
+                                            in Your Life
+                                        </p>
+                                    </div>
+                                    <div class="position-relative course-info">
+                                        <hr class="border-secondary my-2" />
+                                        <button class="btn btn-sm btn-primary">
+                                            Course Info
+                                        </button>
+                                    </div>
+                                    <div
+                                        class="course-data d-flex justify-content-between align-items-center p-2 px-3"
+                                    >
+                                        <div
+                                            class="d-flex justify-content-start align-items-center"
+                                        >
+                                            <i
+                                                class="fa-regular fa-user fa-fw"
+                                            ></i>
+                                            <p class="text-muted mb-0">925</p>
+                                        </div>
+                                        <div
+                                            class="d-flex justify-content-start align-items-center"
+                                        >
+                                            <i
+                                                class="fa-solid fa-dollar-sign fa-fw"
+                                            ></i>
+                                            <p class="text-muted mb-0">925</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 course">
+                                <div class="bg-white rounded">
+                                    <div class="w-100 rounded">
+                                        <img
+                                            src="images/course-05.jpg"
+                                            alt=""
+                                            class="w-100 rounded-top"
+                                        />
+                                    </div>
+                                    <div class="course-details p-3">
+                                        <h5 class="fw-semibold fs-5">
+                                            Responsive Web Design
+                                        </h5>
+                                        <p class="text-muted mb-0">
+                                            Mastering Responsive Web Design And
+                                            Media Queries And Know Everything
+                                            About Breakpoints
+                                        </p>
+                                    </div>
+                                    <div class="position-relative course-info">
+                                        <hr class="border-secondary my-2" />
+                                        <button class="btn btn-sm btn-primary">
+                                            Course Info
+                                        </button>
+                                    </div>
+                                    <div
+                                        class="course-data d-flex justify-content-between align-items-center p-2 px-3"
+                                    >
+                                        <div
+                                            class="d-flex justify-content-start align-items-center"
+                                        >
+                                            <i
+                                                class="fa-regular fa-user fa-fw"
+                                            ></i>
+                                            <p class="text-muted mb-0">925</p>
+                                        </div>
+                                        <div
+                                            class="d-flex justify-content-start align-items-center"
+                                        >
+                                            <i
+                                                class="fa-solid fa-dollar-sign fa-fw"
+                                            ></i>
+                                            <p class="text-muted mb-0">925</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 course">
+                                <div class="bg-white rounded">
+                                    <div class="w-100 rounded">
+                                        <img
+                                            src="images/course-01.jpg"
+                                            alt=""
+                                            class="w-100 rounded-top"
+                                        />
+                                    </div>
+                                    <div class="course-details p-3">
+                                        <h5 class="fw-semibold fs-5">
+                                            Data Structure And Algorithms
+                                        </h5>
+                                        <p class="text-muted mb-0">
+                                            Master The Art Of Data Strcuture And
+                                            Famous Algorithms Like Sorting,
+                                            Dividing And Conquering
+                                        </p>
+                                    </div>
+                                    <div class="position-relative course-info">
+                                        <hr class="border-secondary my-2" />
+                                        <button class="btn btn-sm btn-primary">
+                                            Course Info
+                                        </button>
+                                    </div>
+                                    <div
+                                        class="course-data d-flex justify-content-between align-items-center p-2 px-3"
+                                    >
+                                        <div
+                                            class="d-flex justify-content-start align-items-center"
+                                        >
+                                            <i
+                                                class="fa-regular fa-user fa-fw"
+                                            ></i>
+                                            <p class="text-muted mb-0">925</p>
+                                        </div>
+                                        <div
+                                            class="d-flex justify-content-start align-items-center"
+                                        >
+                                            <i
+                                                class="fa-solid fa-dollar-sign fa-fw"
+                                            ></i>
+                                            <p class="text-muted mb-0">925</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 </div>`;
