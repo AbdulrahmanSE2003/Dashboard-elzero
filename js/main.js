@@ -45,7 +45,9 @@ function changeContent(title) {
 // !INFO: Content section
 
 window.dashboard = `<div class="row gap-3 mt-4 mx-1 quick-intro">
-                            <div class="col-lg col-12 bg-white rounded p-3 pb-0">
+                            <div
+                                class="col-lg col-12 bg-white rounded p-3 pb-0"
+                            >
                                 <div class="welcome mb-3 my-4">
                                     <h5>Welcome</h5>
                                     <p class="text-muted">Abdulrahman</p>
@@ -54,15 +56,15 @@ window.dashboard = `<div class="row gap-3 mt-4 mx-1 quick-intro">
                                     class="stats d-flex justify-content-between text-center bg-e p-3 rounded my-4"
                                 >
                                     <div class="col-3">
-                                        <h5 class="fs-6">Abdulrahman</h5>
+                                        <h5 class="">Abdulrahman</h5>
                                         <p class="text-muted">Developer</p>
                                     </div>
                                     <div class="col-3">
-                                        <h5 class="fs-6">Projects</h5>
+                                        <h5 class="">Projects</h5>
                                         <p class="text-muted">48</p>
                                     </div>
                                     <div class="col-3">
-                                        <h5 class="fs-6">Earned</h5>
+                                        <h5 class="">Earned</h5>
                                         <p class="text-muted">$500</p>
                                     </div>
                                 </div>
@@ -70,7 +72,7 @@ window.dashboard = `<div class="row gap-3 mt-4 mx-1 quick-intro">
                                     <span
                                         href="profile.html"
                                         class="btn btn-sm btn-primary py-1 p-2 px-3"
-                                        >Profile</
+                                        >Profile</span
                                     >
                                 </div>
                             </div>
@@ -79,7 +81,7 @@ window.dashboard = `<div class="row gap-3 mt-4 mx-1 quick-intro">
                                 <p class="text-muted">
                                     Write A Draft For Your Ideas
                                 </p>
-                        
+
                                 <div
                                     class="quick-feedback d-flex flex-column gap-2"
                                 >
@@ -110,14 +112,20 @@ window.dashboard = `<div class="row gap-3 mt-4 mx-1 quick-intro">
                             <div class="col-lg col-12 bg-white rounded-3 p-3">
                                 <h5>Yearly Targets</h5>
                                 <p class="text-muted">Targets Of The Year</p>
-                        
+
                                 <div class="targets d-flex flex-column gap-3">
-                                    <div class="col-12 target row">
-                                        <div class="col-2 text-primary fs-2 ms-4">
-                                            <i class="fas fa-dollar-sign fa-fw"></i>
+                                    <div
+                                        class="col-12 target row justify-content-center gap-2 my-3"
+                                    >
+                                        <div
+                                            class="col-sm-2 col-4 text-primary fs-2 ms-4"
+                                        >
+                                            <i
+                                                class="fas fa-dollar-sign fa-fw"
+                                            ></i>
                                         </div>
                                         <div
-                                            class="col-9 target-details position-relative flex-grow-1"
+                                            class="col-sm-9 ps-sm-0 ps-3 pe-0 text-center target-details position-relative flex-grow-1"
                                         >
                                             <p class="text-muted mb-1">Money</p>
                                             <h6>$20.00</h6>
@@ -131,9 +139,14 @@ window.dashboard = `<div class="row gap-3 mt-4 mx-1 quick-intro">
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-12 target row">
+                                    <div
+                                        class="col-12 target row justify-content-center"
+                                    >
                                         <div
-                                            class="col-2 text-primary fs-2 ms-4"
+                                            gap-2
+                                            my-2
+                                            3
+                                            class="col-sm-2 col-4 text-primary fs-2 ms-4"
                                             style="background-color: #fdecce"
                                         >
                                             <i
@@ -142,9 +155,11 @@ window.dashboard = `<div class="row gap-3 mt-4 mx-1 quick-intro">
                                             ></i>
                                         </div>
                                         <div
-                                            class="col-9 target-details flex-grow-1"
+                                            class="col-sm-9 ps-sm-0 ps-3 pe-0 text-center target-details flex-grow-1"
                                         >
-                                            <p class="text-muted mb-1">Projects</p>
+                                            <p class="text-muted mb-1">
+                                                Projects
+                                            </p>
                                             <h6>24</h6>
                                             <div class="progress">
                                                 <span
@@ -159,9 +174,14 @@ window.dashboard = `<div class="row gap-3 mt-4 mx-1 quick-intro">
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-12 target row">
+                                    <div
+                                        class="col-12 target row justify-content-center"
+                                    >
                                         <div
-                                            class="col-2 text-primary fs-2 ms-4"
+                                            gap-2
+                                            my-2
+                                            3
+                                            class="col-sm-2 col-4 text-primary fs-2 ms-4"
                                             style="background-color: #d3f3df"
                                         >
                                             <i
@@ -170,7 +190,7 @@ window.dashboard = `<div class="row gap-3 mt-4 mx-1 quick-intro">
                                             ></i>
                                         </div>
                                         <div
-                                            class="col-9 target-details flex-grow-1"
+                                            class="col-sm-9 ps-sm-0 ps-3 pe-0 text-center target-details flex-grow-1"
                                         >
                                             <p class="text-muted mb-1">Team</p>
                                             <h6>12</h6>
@@ -238,13 +258,15 @@ window.dashboard = `<div class="row gap-3 mt-4 mx-1 quick-intro">
                                 </div>
                             </div>
                         </div>
-                        <div class="row gap-3 mt-4 mx-1">
-                            <div class="col-lg col-12 bg-white rounded-3 p-3 news">
+                        <div class="row gap-3 mt-4 mx-1 latest">
+                            <div
+                                class="col-lg col-12 bg-white rounded-3 p-3 news"
+                            >
                                 <h5 class="fs-4 mb-3">Latest News</h5>
                                 <div
                                     class="mb-1 row justify-content-center align-items-center gap-2"
                                 >
-                                    <div class="col">
+                                    <div class="col d-sm-block d-none">
                                         <div class="text-center">
                                             <img
                                                 src="images/news-01.png"
@@ -253,8 +275,10 @@ window.dashboard = `<div class="row gap-3 mt-4 mx-1 quick-intro">
                                             />
                                         </div>
                                     </div>
-                                    <div class="col-5 mt-3 px-0">
-                                        <h5 class="fs-6">Created SASS Section</h5>
+                                    <div
+                                        class="col-sm-5 col-8 mt-3 px-sm-0 px-2"
+                                    >
+                                        <h5 class="">Created SASS Section</h5>
                                         <p class="text-muted">
                                             New SASS Examples & Tutorials
                                         </p>
@@ -271,7 +295,7 @@ window.dashboard = `<div class="row gap-3 mt-4 mx-1 quick-intro">
                                 <div
                                     class="mb-1 row justify-content-center align-items-center gap-2"
                                 >
-                                    <div class="col">
+                                    <div class="col d-sm-block d-none">
                                         <div class="text-center">
                                             <img
                                                 src="images/news-02.png"
@@ -280,8 +304,10 @@ window.dashboard = `<div class="row gap-3 mt-4 mx-1 quick-intro">
                                             />
                                         </div>
                                     </div>
-                                    <div class="col-5 mt-3 px-0">
-                                        <h5 class="fs-6">Changed The Design</h5>
+                                    <div
+                                        class="col-sm-5 col-8 mt-3 px-sm-0 px-2"
+                                    >
+                                        <h5 class="">Changed The Design</h5>
                                         <p class="text-muted">
                                             A Brand New Website Design
                                         </p>
@@ -298,7 +324,7 @@ window.dashboard = `<div class="row gap-3 mt-4 mx-1 quick-intro">
                                 <div
                                     class="mb-1 row justify-content-center align-items-center gap-2"
                                 >
-                                    <div class="col">
+                                    <div class="col d-sm-block d-none">
                                         <div class="text-center">
                                             <img
                                                 src="images/news-03.png"
@@ -307,8 +333,10 @@ window.dashboard = `<div class="row gap-3 mt-4 mx-1 quick-intro">
                                             />
                                         </div>
                                     </div>
-                                    <div class="col-5 mt-3 px-0">
-                                        <h5 class="fs-6">Team Increased</h5>
+                                    <div
+                                        class="col-sm-5 col-8 mt-3 px-sm-0 px-2"
+                                    >
+                                        <h5 class="">Team Increased</h5>
                                         <p class="text-muted">
                                             3 Developers Joined The Team
                                         </p>
@@ -325,7 +353,7 @@ window.dashboard = `<div class="row gap-3 mt-4 mx-1 quick-intro">
                                 <div
                                     class="mb-1 row justify-content-center align-items-center gap-2"
                                 >
-                                    <div class="col">
+                                    <div class="col d-sm-block d-none">
                                         <div class="text-center">
                                             <img
                                                 src="images/news-04.png"
@@ -334,8 +362,10 @@ window.dashboard = `<div class="row gap-3 mt-4 mx-1 quick-intro">
                                             />
                                         </div>
                                     </div>
-                                    <div class="col-5 mt-3 px-0">
-                                        <h5 class="fs-6">Added Payment Gateway</h5>
+                                    <div
+                                        class="col-sm-5 col-8 mt-3 px-sm-0 px-2"
+                                    >
+                                        <h5 class="">Added Payment Gateway</h5>
                                         <p class="text-muted">
                                             Many New Payment Gateways Added
                                         </p>
@@ -349,22 +379,29 @@ window.dashboard = `<div class="row gap-3 mt-4 mx-1 quick-intro">
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg col-12 bg-white rounded-3 p-3 tasks">
+                            <div
+                                class="col-lg col-12 bg-white rounded-3 p-3 tasks"
+                            >
                                 <h5 class="fs-4 mb-3">Latest Tasks</h5>
                                 <div class="row">
                                     <div class="col-12 task">
                                         <div
                                             class="row mb-1 justify-content-between align-items-center"
                                         >
-                                            <div class="col-11 mb-2 pt-2">
+                                            <div
+                                                class="col-sm-11 col-9 mb-2 pt-2"
+                                            >
                                                 <h5 class="fs-6">
                                                     Record One New Video
                                                 </h5>
                                                 <p class="text-muted">
-                                                    Record Python Create Exe Project
+                                                    Record Python Create Exe
+                                                    Project
                                                 </p>
                                             </div>
-                                            <div class="delete col-1 pe-2">
+                                            <div
+                                                class="delete col-sm-1 col-2 pe-2"
+                                            >
                                                 <i
                                                     class="fa-regular fa-trash-can fa-fw fs-5"
                                                 ></i>
@@ -378,14 +415,20 @@ window.dashboard = `<div class="row gap-3 mt-4 mx-1 quick-intro">
                                         <div
                                             class="row mb-1 justify-content-between align-items-center"
                                         >
-                                            <div class="col-11 mb-2 pt-2">
-                                                <h5 class="fs-6">Write Article</h5>
+                                            <div
+                                                class="col-sm-11 col-9 mb-2 pt-2"
+                                            >
+                                                <h5 class="fs-6">
+                                                    Write Article
+                                                </h5>
                                                 <p class="text-muted">
-                                                    Write Low Level vs High Level
-                                                    Languages
+                                                    Write Low Level vs High
+                                                    Level Languages
                                                 </p>
                                             </div>
-                                            <div class="delete col-1 pe-2">
+                                            <div
+                                                class="delete col-sm-1 col-2 pe-2"
+                                            >
                                                 <i
                                                     class="fa-regular fa-trash-can fa-fw fs-5"
                                                 ></i>
@@ -399,14 +442,20 @@ window.dashboard = `<div class="row gap-3 mt-4 mx-1 quick-intro">
                                         <div
                                             class="row mb-1 justify-content-between align-items-center"
                                         >
-                                            <div class="col-11 mb-2 pt-2">
-                                                <h5 class="fs-6">Finish Project</h5>
+                                            <div
+                                                class="col-sm-11 col-9 mb-2 pt-2"
+                                            >
+                                                <h5 class="fs-6">
+                                                    Finish Project
+                                                </h5>
                                                 <p class="text-muted">
                                                     Publish Academy Programming
                                                     Project
                                                 </p>
                                             </div>
-                                            <div class="delete col-1 pe-2">
+                                            <div
+                                                class="delete col-sm-1 col-2 pe-2"
+                                            >
                                                 <i
                                                     class="fa-regular fa-trash-can fa-fw fs-5"
                                                 ></i>
@@ -420,7 +469,9 @@ window.dashboard = `<div class="row gap-3 mt-4 mx-1 quick-intro">
                                         <div
                                             class="row mb-1 justify-content-between align-items-center"
                                         >
-                                            <div class="col-11 mb-2 pt-2">
+                                            <div
+                                                class="col-sm-11 col-9 mb-2 pt-2"
+                                            >
                                                 <h5 class="fs-6">
                                                     Attend The Meeting
                                                 </h5>
@@ -429,7 +480,9 @@ window.dashboard = `<div class="row gap-3 mt-4 mx-1 quick-intro">
                                                     Analysis Meeting
                                                 </p>
                                             </div>
-                                            <div class="delete col-1 pe-2">
+                                            <div
+                                                class="delete col-sm-1 col-2 pe-2"
+                                            >
                                                 <i
                                                     class="fa-regular fa-trash-can fa-fw fs-5"
                                                 ></i>
@@ -495,7 +548,9 @@ window.dashboard = `<div class="row gap-3 mt-4 mx-1 quick-intro">
                                 <div
                                     class="search-result my-2 d-flex justify-content-between"
                                 >
-                                    <p class="fw-semibold fs-6 text-black">CSS</p>
+                                    <p class="fw-semibold fs-6 text-black">
+                                        CSS
+                                    </p>
                                     <p
                                         class="px-2 py-1 rounded bg-secondary-subtle"
                                     >
@@ -505,7 +560,9 @@ window.dashboard = `<div class="row gap-3 mt-4 mx-1 quick-intro">
                                 <div
                                     class="search-result my-2 d-flex justify-content-between"
                                 >
-                                    <p class="fw-semibold fs-6 text-black">HTML</p>
+                                    <p class="fw-semibold fs-6 text-black">
+                                        HTML
+                                    </p>
                                     <p
                                         class="px-2 py-1 rounded bg-secondary-subtle"
                                     >
@@ -515,7 +572,9 @@ window.dashboard = `<div class="row gap-3 mt-4 mx-1 quick-intro">
                                 <div
                                     class="search-result my-2 d-flex justify-content-between"
                                 >
-                                    <p class="fw-semibold fs-6 text-black">PHP</p>
+                                    <p class="fw-semibold fs-6 text-black">
+                                        PHP
+                                    </p>
                                     <p
                                         class="px-2 py-1 rounded bg-secondary-subtle"
                                     >
@@ -566,7 +625,9 @@ window.dashboard = `<div class="row gap-3 mt-4 mx-1 quick-intro">
                                             <p class="fw-medium mt-2 mb-0">
                                                 My-Psd-File.pdf
                                             </p>
-                                            <p class="text-muted">Abdulrahman</p>
+                                            <p class="text-muted">
+                                                Abdulrahman
+                                            </p>
                                         </div>
                                     </div>
                                     <div>
@@ -656,7 +717,7 @@ window.dashboard = `<div class="row gap-3 mt-4 mx-1 quick-intro">
                                     </div>
                                 </div>
                             </div>
-</div>`;
+                        </div>`;
 window.setting = `<div class="mt-2">
   <div class="row row-cols-1 row-cols-lg-2 g-3 mt-2">
     <div class="col setting">
@@ -771,7 +832,8 @@ window.setting = `<div class="mt-2">
     </div>
   </div>
 </div>`;
-window.profile = `<div class="row gap-3 mt-4 bg-white rounded p-3 mx-0">
+window.profile = `
+                        <div class="row gap-3 mt-4 bg-white rounded p-3 mx-0">
                             <div
                                 class="col-lg-2 profile-overview d-flex flex-column justify-content-center align-items-center gap-3"
                             >
@@ -1048,13 +1110,13 @@ window.profile = `<div class="row gap-3 mt-4 bg-white rounded p-3 mx-0">
                                 <div
                                     class="row px-2 gap-sm-2 gap-3 justify-content-between align-items-center"
                                 >
-                                    <div class="col-sm-7 col-12">
+                                    <div class="col-7">
                                         <div
                                             class="d-flex justify-content-start align-items-center gap-0"
                                         >
-                                            <div class="w-25">
+                                            <div class="w-25 d-sm-block d-none">
                                                 <img
-                                                    src="images/activity-01 (1).png"
+                                                    src="images/activity-01.png"
                                                     alt=""
                                                     class="w-75"
                                                 />
@@ -1062,16 +1124,13 @@ window.profile = `<div class="row gap-3 mt-4 bg-white rounded p-3 mx-0">
                                             <div>
                                                 <h5 class="fw-medium">Store</h5>
                                                 <p class="text-muted mb-0">
-                                                    Bought The Mastering Python
-                                                    Course
+                                                    Bought The javaScript Course
                                                 </p>
                                             </div>
                                         </div>
                                     </div>
-                                    <div
-                                        class="col-sm-4 text-sm-end text-center"
-                                    >
-                                        <h5 class="fs-6">18:47</h5>
+                                    <div class="col-4 text-sm-end text-center">
+                                        <h5 class="">18:47</h5>
                                         <p class="text-muted mb-0">Yesterday</p>
                                     </div>
                                     <hr class="my-2 border-secondary-subtle" />
@@ -1079,11 +1138,11 @@ window.profile = `<div class="row gap-3 mt-4 bg-white rounded p-3 mx-0">
                                 <div
                                     class="row px-2 gap-sm-2 gap-3 justify-content-between align-items-center"
                                 >
-                                    <div class="col-sm-7 col-12">
+                                    <div class="col-7">
                                         <div
                                             class="d-flex justify-content-start align-items-center gap-0"
                                         >
-                                            <div class="w-25">
+                                            <div class="w-25 d-sm-block d-none">
                                                 <img
                                                     src="images/activity-02.png"
                                                     alt=""
@@ -1100,10 +1159,8 @@ window.profile = `<div class="row gap-3 mt-4 bg-white rounded p-3 mx-0">
                                             </div>
                                         </div>
                                     </div>
-                                    <div
-                                        class="col-sm-4 text-sm-end text-center"
-                                    >
-                                        <h5 class="fs-6">16:05</h5>
+                                    <div class="col-4 text-sm-end text-center">
+                                        <h5 class="">16:05</h5>
                                         <p class="text-muted mb-0">Yesterday</p>
                                     </div>
                                     <hr class="my-2 border-secondary-subtle" />
@@ -1111,11 +1168,11 @@ window.profile = `<div class="row gap-3 mt-4 bg-white rounded p-3 mx-0">
                                 <div
                                     class="row px-2 gap-sm-2 gap-3 justify-content-between align-items-center"
                                 >
-                                    <div class="col-sm-7 col-12">
+                                    <div class="col-7">
                                         <div
                                             class="d-flex justify-content-start align-items-center gap-0"
                                         >
-                                            <div class="w-25">
+                                            <div class="w-25 d-sm-block d-none">
                                                 <img
                                                     src="images/activity-03.png"
                                                     alt=""
@@ -1132,10 +1189,8 @@ window.profile = `<div class="row gap-3 mt-4 bg-white rounded p-3 mx-0">
                                             </div>
                                         </div>
                                     </div>
-                                    <div
-                                        class="col-sm-4 text-sm-end text-center"
-                                    >
-                                        <h5 class="fs-6">18:05</h5>
+                                    <div class="col-4 text-sm-end text-center">
+                                        <h5 class="">18:05</h5>
                                         <p class="text-muted mb-0">Yesterday</p>
                                     </div>
                                     <hr class="my-2 border-secondary-subtle" />
@@ -1143,11 +1198,11 @@ window.profile = `<div class="row gap-3 mt-4 bg-white rounded p-3 mx-0">
                                 <div
                                     class="row px-2 gap-sm-2 gap-3 justify-content-between align-items-center"
                                 >
-                                    <div class="col-sm-7 col-12">
+                                    <div class="col-7">
                                         <div
                                             class="d-flex justify-content-start align-items-center gap-0"
                                         >
-                                            <div class="w-25">
+                                            <div class="w-25 d-sm-block d-none">
                                                 <img
                                                     src="images/activity-01.png"
                                                     alt=""
@@ -1162,15 +1217,13 @@ window.profile = `<div class="row gap-3 mt-4 bg-white rounded p-3 mx-0">
                                             </div>
                                         </div>
                                     </div>
-                                    <div
-                                        class="col-sm-4 text-sm-end text-center"
-                                    >
-                                        <h5 class="fs-6">12:05</h5>
+                                    <div class="col-4 text-sm-end text-center">
+                                        <h5 class="">12:05</h5>
                                         <p class="text-muted mb-0">Yesterday</p>
                                     </div>
                                 </div>
                             </div>
-</div>`;
+                        </div>`;
 window.plans = `<div class="row mt-1 gx-4 gy-4 mx-1">
                             <div class="col-lg-6 col-12 ps-0">
                                 <div
@@ -1282,7 +1335,7 @@ window.plans = `<div class="row mt-1 gx-4 gy-4 mx-1">
                                 </div>
                             </div>
 
-                            <div class="col-lg-6 col-12">
+                            <div class="col-lg-6 col-12 ps-0">
                                 <div
                                     class="bg-white rounded p-3 h-100 d-flex flex-column"
                                 >
@@ -1494,7 +1547,7 @@ window.plans = `<div class="row mt-1 gx-4 gy-4 mx-1">
                                             ></i>
                                         </li>
                                     </ul>
-                                    <p class="text-muted text-center">
+                                    <p class="text-muted text-center selected-plan">
                                         This is your current Plan
                                     </p>
                                 </div>
@@ -1829,7 +1882,7 @@ window.projects = `<div class="row g-3 mt-3 mx-0">
                             </div>
 </div>`;
 window.friends = `<div class="row mt-1 friends g-4 mx-0">
-                            <div class="col-lg-4 ps-1">
+                            <div class="col-lg-4 ">
                                 <div
                                     class="d-flex flex-column gap-2 align-items-center justify-content-center bg-white rounded pt-2"
                                 >
@@ -1905,7 +1958,7 @@ window.friends = `<div class="row mt-1 friends g-4 mx-0">
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 ps-1">
+                            <div class="col-lg-4 ">
                                 <div
                                     class="d-flex flex-column gap-2 align-items-center justify-content-center bg-white rounded pt-2"
                                 >
@@ -1983,7 +2036,7 @@ window.friends = `<div class="row mt-1 friends g-4 mx-0">
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 ps-1">
+                            <div class="col-lg-4 ">
                                 <div
                                     class="d-flex flex-column gap-2 align-items-center justify-content-center bg-white rounded pt-2"
                                 >
@@ -2061,7 +2114,7 @@ window.friends = `<div class="row mt-1 friends g-4 mx-0">
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 ps-1">
+                            <div class="col-lg-4 ">
                                 <div
                                     class="d-flex flex-column gap-2 align-items-center justify-content-center bg-white rounded pt-2"
                                 >
@@ -2139,7 +2192,7 @@ window.friends = `<div class="row mt-1 friends g-4 mx-0">
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 ps-1">
+                            <div class="col-lg-4 ">
                                 <div
                                     class="d-flex flex-column gap-2 align-items-center justify-content-center bg-white rounded pt-2"
                                 >
@@ -2215,7 +2268,7 @@ window.friends = `<div class="row mt-1 friends g-4 mx-0">
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 ps-1">
+                            <div class="col-lg-4 ">
                                 <div
                                     class="d-flex flex-column gap-2 align-items-center justify-content-center bg-white rounded pt-2"
                                 >
@@ -2291,7 +2344,7 @@ window.friends = `<div class="row mt-1 friends g-4 mx-0">
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 ps-1">
+                            <div class="col-lg-4 ">
                                 <div
                                     class="d-flex flex-column gap-2 align-items-center justify-content-center bg-white rounded pt-2"
                                 >
@@ -2369,7 +2422,7 @@ window.friends = `<div class="row mt-1 friends g-4 mx-0">
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 ps-1">
+                            <div class="col-lg-4 ">
                                 <div
                                     class="d-flex flex-column gap-2 align-items-center justify-content-center bg-white rounded pt-2"
                                 >
@@ -2446,7 +2499,6 @@ window.friends = `<div class="row mt-1 friends g-4 mx-0">
                                 </div>
                             </div>
 </div>`;
-
 window.courses = `<div class="row mt-2 courses g-4">
                             <div class="col-lg-4 course">
                                 <div class="bg-white rounded">
